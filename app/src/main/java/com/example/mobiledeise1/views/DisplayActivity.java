@@ -3,10 +3,8 @@ package com.example.mobiledeise1.views;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.widget.TextView;
-import com.example.mobiledeise1.databinding.ActivityDisplayMessageBinding;
+import com.example.mobiledeise1.databinding.*;
 
 import com.example.mobiledeise1.R;
 import com.example.mobiledeise1.model.Usuario;
@@ -18,9 +16,9 @@ public class DisplayActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        ActivityDisplayMessageBinding activityDisplayMessageBinding = DataBindingUtil.setContentView(this, R.layout.activity_display_message);
+        ActivityDisplayMessageBinding displayActivityBinding = DataBindingUtil.setContentView(this, R.layout.activity_display_message);
         Usuario user = (Usuario) getIntent().getSerializableExtra("usuario");
-        activityDisplayMessageBinding.setViewModel(new DisplayActivityViewModel(user));
+        displayActivityBinding.setViewModel(new DisplayActivityViewModel(user));
 
     }
 }
