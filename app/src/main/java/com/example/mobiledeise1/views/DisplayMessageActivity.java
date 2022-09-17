@@ -1,4 +1,4 @@
-package com.example.mobiledeise1;
+package com.example.mobiledeise1.views;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,7 +6,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.example.mobiledeise1.R;
+
 public class DisplayMessageActivity extends AppCompatActivity {
+
+    public static int ID = 1234;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
